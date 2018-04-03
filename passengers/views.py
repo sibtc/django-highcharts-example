@@ -100,7 +100,7 @@ def chart_data(request):
 
     chart = {
         'chart': {'type': 'pie'},
-        'title': {'text': 'Titanic Survivors by Ticket Class'},
+        'title': {'text': 'Titanic\'s Passengers By Embarkation Port'},
         'series': [{
             'name': 'Embarkation Port',
             'data': list(map(lambda row: {'name': port_display_name[row['embarked']], 'y': row['total']}, dataset))
