@@ -80,7 +80,7 @@ def ticket_class_view_3(request):
 
     dump = json.dumps(chart)
 
-    return render(request, 'ticket_class_3.html', {'chart': chart})
+    return render(request, 'ticket_class_3.html', {'chart': dump})
 
 
 def json_example(request):
